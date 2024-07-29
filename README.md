@@ -8,7 +8,11 @@ sudo mkdir -p -m 775 /usr/local/bin
 sudo ln -sf "$HOME/.slack/bin/slack" "/usr/local/bin/slack"
 sudo curl -fsSL https://downloads.slack-edge.com/slack-cli/install.sh | bash
 ```
-You'll also need to set the slack webhook URL as an environment variable. (Founding members should message Ben to get theirs)
+Next, you'll log into Slack -- this will give you a 'command' that you should copy and paste into any channel in the workspace you'll be using.
+```
+slack login
+```
+You'll also need to set the slack webhook URL as an environment variable. (Founding members should message Ben to get theirs).
 If using fish, add this line to your config.fish:
 ```
 set -gx PATH $PATH $HOME/.slack/bin
